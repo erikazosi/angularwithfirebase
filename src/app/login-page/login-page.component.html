@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <h1>Login To Your Account</h1>
+
+
+    <!--<div *ngIf="!checkUserLoggedIn()">-->
+            <!--<span routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+            <!--</span></div>-->
+      <label for="email">email:</label>
+      <input type="text" [(ngModel)]="email" name="email">
+
+      <br>
+      <div>
+        <label for="password">password</label>
+        <input type="password" [(ngModel)]="password" name="password">
+      </div>
+      <br>
+
+      <button (click)="loginWithEmail(email, password)"> Login </button>
+      <button (click)="signupWithEmail(email, password)"> Signup </button>
+
+
+    <button (click)="login()" >Login With Google</button>
+    <button (click)="loginFacebook()">Login With Facebook</button>
+
+  </div>
+</div>
